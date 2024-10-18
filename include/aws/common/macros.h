@@ -180,4 +180,8 @@ enum { AWS_CACHE_LINE = 64 };
  */
 #define AWS_CONTAINER_OF(ptr, type, member) ((type *)((uint8_t *)(ptr) - offsetof(type, member)))
 
+#ifdef __cplusplus
+#define AWS_NO_STATIC_IMPL
+#endif
+
 #endif /* AWS_COMMON_MACROS_H */
